@@ -20,53 +20,63 @@ function generateNumbers(){
 	randomQuNum = Math.floor(Math.random()*10);
 
 	// Set up the questions
-	addQuestions = ["Ben has "+number1+" counters and Tilly has "+number2+" counters, how many are counters altogether?",
-	"David and Liz have "+number1+" coloured beads and "+number2+" coloured beads, how many beads altogether?",
-	"Mary has "+number1+" earrings and Tina has "+number2+" earrings, what is the total number of earrings?",
-	"Robert and Albert have "+number1+" coloured stickers and "+number2+" coloured stickers, how many coloured stickers altogether?",
+	prepareQuestions();
+
+	//Set the hint images to blank
+	document.getElementById("helpImage1").innerHTML = "";
+	document.getElementById("helpImage2").innerHTML = "";
+
+}
+
+//Prepare the array of questions
+function prepareQuestions(){
+	addQuestions = ["Ben has "+number1+" counter(s) and Tilly has "+number2+" counter(s), how many are counters altogether?",
+	"David and Liz have "+number1+" coloured bead(s) and "+number2+" coloured bead(s), how many beads altogether?",
+	"Mary has "+number1+" earring(s) and Tina has "+number2+" earring(s), what is the total number of earrings?",
+	"Robert and Albert have "+number1+" coloured sticker(s) and "+number2+" coloured sticker(s), how many coloured stickers altogether?",
 	"David has "+number1+" mixed fruit and Liz has "+number2+" mixed fruit, what is the total number of mixed fruit?",
-	"Tino and Rita have "+number1+" beans and "+number2+" beans, how many beans altogether?",
-	"Thuli has "+number1+" jelly beans and Ariko has "+number2+" jelly beans, what is the total number of jelly beans?",
-	"Tandana has "+number1+" balls and Flora has balls, how many balls?",
-	"Marie has "+number1+" magnets and Lewis has magnets, what is the total number of magnets?",
-	"Fiona has "+number1+" coloured rocks and Daniel has "+number2+" coloured rocks, what is the total number of coloured rocks?"
+	"Tino and Rita have "+number1+" bean(s) and "+number2+" bean(s), how many beans altogether?",
+	"Thuli has "+number1+" jelly bean(s) and Ariko has "+number2+" jelly bean(s), what is the total number of jelly beans?",
+	"Tandana has "+number1+" ball(s) and Flora has ball(s), how many balls?",
+	"Marie has "+number1+" magnet(s) and Lewis has magnet(s), what is the total number of magnets?",
+	"Fiona has "+number1+" coloured rock(s) and Daniel has "+number2+" coloured rock(s), what is the total number of coloured rocks?"
 	];
 
-	minusQuestions = ["Ben has "+number1+" counters and gives Tilly "+number2+" counters, how many are counters does Ben now have?",
-	"Emmanuel has "+number1+" coloured beads and drops "+number2+" coloured beads, how many beads does David have left?",
-	"Mary has "+number1+" earrings and puts "+number2+" earrings in a box, how many earrings are left?",
-	"Robert had "+number1+" coloured stickers but haas lost "+number2+" coloured stickers, how many coloured stickers does Robert have left?",
+	minusQuestions = ["Ben has "+number1+" counter(s) and gives Tilly "+number2+" counter(s), how many are counters does Ben now have?",
+	"Emmanuel has "+number1+" coloured bead(s) and drops "+number2+" coloured bead(s), how many beads does David have left?",
+	"Mary has "+number1+" earring(s) and puts "+number2+" earring(s) in a box, how many earrings are left?",
+	"Robert had "+number1+" coloured sticker(s) but has lost "+number2+" coloured sticker(s), how many coloured stickers does Robert have left?",
 	"David has "+number1+" pieces of mixed fruit and eats "+number2+", how many does David have left?",
-	"Tino has "+number1+" beans and has eaten "+number2+" beans, how many beans does Tino have left to eat?",
-	"Thuli has "+number1+" jelly beans has given Ariko "+number2+" jelly beans, how many jelly beans does Thuli have now?",
-	"Tandana has "+number1+" balls and has left "+number2+" balls in the shed, how many balls does Tandana have to play with?",
-	"Marie has "+number1+" magnets and gives Lewis "+number2+" magnets, how many magnets does Marie have?",
-	"Fiona has collected "+number1+" coloured rocks but left "+number2+" coloured rocks behind, how many coloured rocks does Fiona have?"
+	"Tino has "+number1+" bean(s) and has eaten "+number2+" beans, how many bean(s) does Tino have left to eat?",
+	"Thuli has "+number1+" jelly bean(s) has given Ariko "+number2+" jelly bean(s), how many jelly beans does Thuli have now?",
+	"Tandana has "+number1+" ball(s) and has left "+number2+" ball(s) in the shed, how many balls does Tandana have to play with?",
+	"Marie has "+number1+" magnet(s) and gives Lewis "+number2+" magnet(s), how many magnets does Marie have?",
+	"Fiona has collected "+number1+" coloured rock(s) but left "+number2+" coloured rock(s) behind, how many coloured rocks does Fiona have?"
 	];
 
-	multiplyQuestions = ["Ben has "+number1+" counters in every tin. There are "+number2+" tins. How many are counters altogether?",
-	"Liz has "+number1+" coloured beads in each of her "+number2+" baskets, how many beads altogether?",
-	"Mary has "+number1+" earrings in each box. There are "+number2+" boxes. What is the total number of earrings?",
-	"Albert has "+number1+" coloured stickers on every page of his book. There are "+number2+" pages. How many coloured stickers altogether?",
-	"Timothy has "+number2+" mixed fruit in every bowl. There are "+number2+" bowls. How much mixed fruit altogether",
-	"Tino has "+number1+" beans in every packet. There are "+number2+" packets. How many beans altogether?",
-	"Thuli has "+number1+" jelly beans in each bag. There are "+number2+" bags. what is the total number of jelly beans?",
-	"Tandana has "+number1+" balls in each basket. There are "+number2+" baskets. How many balls altogether?",
-	"Marie has "+number1+" magnets in each drawer. There are "+number2+" drawers. How many drawers altogether?",
-	"Fiona has "+number1+" coloured rocks in each box. There are "+number2+" boxes. How many coloured rocks altogether?"
+	multiplyQuestions = ["Ben has "+number1+" counter(s) in every tin. There are "+number2+" tin(s). How many are counters altogether?",
+	"Liz has "+number1+" coloured bead(s) in each of her "+number2+" baskets, how many beads altogether?",
+	"Mary has "+number1+" earring(s) in each box. There are "+number2+" boxe(s). What is the total number of earrings?",
+	"Albert has "+number1+" coloured sticker(s) on every page of his book. There are "+number2+" page(s). How many coloured stickers altogether?",
+	"Timothy has "+number2+" mixed fruit in every bowl. There are "+number2+" bowl(s). How much mixed fruit altogether",
+	"Tino has "+number1+" bean(s) in every packet. There are "+number2+" packet(s). How many beans altogether?",
+	"Thuli has "+number1+" jelly bean(s) in each bag. There are "+number2+" bags(s). what is the total number of jelly beans?",
+	"Tandana has "+number1+" ball(s) in each basket. There are "+number2+" basket(s). How many balls altogether?",
+	"Marie has "+number1+" magnet(s) in each drawer. There are "+number2+" drawer(s). How many drawers altogether?",
+	"Fiona has "+number1+" coloured rock(s) in each box. There are "+number2+" boxes. How many coloured rocks altogether?"
 	];
 
 
-	divideQuestions = ["Ben has "+number1+" counters and "+number2+" friends, if Ben shares the counters equally how many can each of them have? There may be some left over.",
-	"David has "+number1+" coloured beads and "+number2+" boxes, if David shares the beads equally how many in each box? There may be some left over.",
-	"Mary has "+number1+" earrings and wants to share them equally with her "+number2+" sisters, how many does each sister get? There may be some left over.",
-	"Pearl has "+number1+" coloured stickers and wants to put the same number of stickers on "+number2+" books, how many stickers on each book? There may be some left over.",
+	divideQuestions = ["Ben has "+number1+" counter(s) and "+number2+" friends, if Ben shares the counter(s) equally how many can each of them have? There may be some left over.",
+	"David has "+number1+" coloured bead(s) and "+number2+" boxes, if David shares the bead(s) equally how many in each box? There may be some left over.",
+	"Mary has "+number1+" earring(s) and wants to share them equally with her "+number2+" sister(s), how many does each sister get? There may be some left over.",
+	"Pearl has "+number1+" coloured sticker(s) and wants to put the same number of stickers on "+number2+" books(s), how many stickers on each book? There may be some left over.",
 	"David has "+number1+" mixed fruit and "+number2+" friends, if David shares the mixed fruit equally how many can each of them have? There may be some left over that David can eat.",
-	"Rita havs "+number1+" beans and "+number2+" boxes. If Rita shares the beans equally how many in each box? There may be some left over.",
-	"Thuli has "+number1+" jelly beans and "+number2+" brothers, if Thuli shares the beans equally how many can each of them have? There may be some left over.",
-	"Tandana has "+number1+" balls and "+number2+" baskets. If Tandana puts the same number of in each basket, how many balls in each basket? There may be some left over.",
-	"Marie has "+number1+" magnets and "+number2+" fridges. If Marie puts the same number of magnets on each fridge, how many magnets are on each fridge? There may be some left over.",
-	"Fiona has "+number1+" coloured rocks and "+number2+" bags. If Fiona puts the same number of coloured rocks in each bag, how many coloured rocks are in each bag? There may be some left over.",,
+	"Rita havs "+number1+" bean(s) and "+number2+" boxes. If Rita shares the bean(s) equally how many in each box? There may be some left over.",
+	"Thuli has "+number1+" jelly bean(s) and "+number2+" brother(s), if Thuli shares the bean(s) equally how many can each of them have? There may be some left over.",
+	"Tandana has "+number1+" ball(s) and "+number2+" basket(s). If Tandana puts the same number of in each basket, how many balls in each basket? There may be some left over.",
+	"Marie has "+number1+" magnet(s) and "+number2+" fridge(s). If Marie puts the same number of magnet(s) on each fridge, how many magnets are on each fridge? There may be some left over.",
+	"Fiona has "+number1+" coloured rock(s) and "+number2+" bags. If Fiona puts the same number of coloured rock(s) in each bag, how many coloured rocks are in each bag? There may be some left over.",,
 	];
 }
 
@@ -92,10 +102,6 @@ function setPageNumbers(operator){
 	document.getElementById("number1_sum").innerHTML = number1;
 	document.getElementById("number2_sum").innerHTML = number2;
 	document.getElementById("operator").innerHTML = operator;
-
-	// document.getElementById("number1").innerHTML = number1;
-	// document.getElementById("number2").innerHTML = number2;
-
 	document.getElementById("question").innerHTML = question;
 };
 
@@ -104,7 +110,7 @@ function setPageNumbers(operator){
 2- Create a handle on the submit answer button
 3- Do the calculation, then call the function to check the user's answer*/
 function add(){
-	setPageNumbers("+");
+	+setPageNumbers("+");
 
 	var answer = document.getElementById("submitAns");
 	var correctAns = number1 + number2;
@@ -131,12 +137,12 @@ function minus(){
 
 	var answer = document.getElementById("submitAns");
 	answer.onclick =  function() {
-
 		var userAns = document.getElementById("answer").value;
 		var correctAns = number1 - number2;
 
 		checkUserAnswer("minus", userAns, correctAns);
 	}
+	questionHelp();
 };
 
 
@@ -232,10 +238,7 @@ function questionHelp()
 {
 	var hint = document.getElementById("help");
 
-
-	//
 	hint.onclick =  function() {
-		//for(var i=0; i<number1; i++){
 		var counter="";
 		var counter2="";
 		var imageSrc = '<img src="http://images.clipartpanda.com/apple-clipart-apple5.png" alt="Apple image" width="20" height="40" />'
@@ -248,8 +251,6 @@ function questionHelp()
 		document.getElementById("helpImage1").innerHTML = counter;
 		document.getElementById("helpImage2").innerHTML = counter2;
 	}
-
-
 }
 
 // Call the generate the random numbers as soon as the page is open
