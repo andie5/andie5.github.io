@@ -161,6 +161,7 @@ function multiply(){
 
 		checkUserAnswer("multiply", userAns, correctAns);
 	}
+
 };
 
 
