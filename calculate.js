@@ -102,7 +102,7 @@ function divide(){
 
 	var numbers  = generateNumbers();
 	var index    = getQuestionIndex();
-	var question = window.questions['multiply'](numbers)[index];
+	var question = window.questions['divide'](numbers)[index];
 
 	//\xF7 hexadecimal for divide sign
 	updateDOM(numbers, '\xF7', question);
