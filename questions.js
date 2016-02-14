@@ -49,16 +49,16 @@
 
   var divideQuestions = function(numbers){
     return [
-      "Ben has "+numbers[0]+" counter(s) and "+numbers[1]+" friends, if Ben shares the counter(s) equally how many can each of them have? There may be some left over.",
+      "Ben has "+numbers[0]+" counter(s) and "+numbers[1]+" friend(s), if Ben shares the counter(s) equally how many can each of them have? There may be some left over.",
       "David has "+numbers[0]+" coloured bead(s) and "+numbers[1]+" boxes, if David shares the bead(s) equally how many in each box? There may be some left over.",
       "Mary has "+numbers[0]+" earring(s) and wants to share them equally with her "+numbers[1]+" sister(s), how many does each sister get? There may be some left over.",
-      "Pearl has "+numbers[0]+" coloured sticker(s) and wants to put the same number of stickers on "+numbers[1]+" books(s), how many stickers on each book? There may be some left over.",
-      "David has "+numbers[0]+" mixed fruit and "+numbers[1]+" friends, if David shares the mixed fruit equally how many can each of them have? There may be some left over that David can eat.",
+      "Pearl has "+numbers[0]+" coloured sticker(s) and wants to put the same number of sticker(s) on "+numbers[1]+" book(s), how many stickers on each book? There may be some left over.",
+      "David has "+numbers[0]+" mixed fruit and "+numbers[1]+" friend(s), if David shares the mixed fruit equally how many can each of them have? There may be some left over that David can eat.",
       "Rita havs "+numbers[0]+" bean(s) and "+numbers[1]+" boxes. If Rita shares the bean(s) equally how many in each box? There may be some left over.",
       "Thuli has "+numbers[0]+" jelly bean(s) and "+numbers[1]+" brother(s), if Thuli shares the bean(s) equally how many can each of them have? There may be some left over.",
-      "Tandana has "+numbers[0]+" ball(s) and "+numbers[1]+" basket(s). If Tandana puts the same number of in each basket, how many balls in each basket? There may be some left over.",
+      "Tandana has "+numbers[0]+" ball(s) and "+numbers[1]+" basket(s). If Tandana puts the same number in each basket, how many balls in each basket? There may be some left over.",
       "Marie has "+numbers[0]+" magnet(s) and "+numbers[1]+" fridge(s). If Marie puts the same number of magnet(s) on each fridge, how many magnets are on each fridge? There may be some left over.",
-      "Fiona has "+numbers[0]+" coloured rock(s) and "+numbers[1]+" bags. If Fiona puts the same number of coloured rock(s) in each bag, how many coloured rocks are in each bag? There may be some left over.",,
+      "Fiona has "+numbers[0]+" coloured rock(s) and "+numbers[1]+" bag(s). If Fiona puts the same number of coloured rock(s) in each bag, how many coloured rocks are in each bag? There may be some left over.",,
     ];
   }
 
