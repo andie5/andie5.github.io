@@ -20,13 +20,20 @@ body{
 	background-size: cover;
 	/*Make sure the background does not tile or repeat:*/
 	background-repeat: no-repeat;
-	/*If I dont want the background to scroll
+	/*Stops the background scrolling
 	background-attachment: fixed;*/
 }
 
 /***********************************************/
 /* Layout Divs                                 */
 /***********************************************/
+
+/*DIV to help centre the layout of the website*/
+.main-content{
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .container{
 	position:relative;
 	/*height: 681px;*/
@@ -50,13 +57,13 @@ body{
 .content {
 	position: relative;
 	padding: 20px;
-  /*width: 481px;*/
   top: 10%;
 	text-align:justify;
 	font-size: 4vh;
 	margin: 10px;
 
-	/*Add animation to the speech box so it rotates 360 degrees*/
+	/*Add animation to the speech box so it rotates 360 degrees
+	This is its starting position*/
 	/*transform: rotate(0deg);
 	transition: transform 2s;*/
 
@@ -64,7 +71,6 @@ body{
 	border: 8px solid #666;
 	border-radius: 60px;
 	box-shadow: 2px 2px 4px #888;
-	/*float: left;*/
 }
 
 .content:hover
@@ -74,7 +80,6 @@ body{
 }
 
 /*Before and after pseudo code helps to display a border radius that had a transaparent triangle*/
-
 .content:before
 {
 	content: ' ';
@@ -83,7 +88,6 @@ body{
 	height: 0;
 	right: -50px;
 	top: 56px;
-	/*top: 300px;*/
 	border: 25px solid;
 	border-color: #666 transparent transparent #666;
 }
@@ -98,12 +102,6 @@ body{
 	top: 64px;
 	border: 20px solid;
 	border-color: white transparent transparent white;
-}
-
-/*DIV to help centre the layout of the website*/
-.main-content{
-	margin-left: auto;
-	margin-right: auto;
 }
 
 /* Display layout for the submit button*/
@@ -154,8 +152,6 @@ body{
 
 .pageName{
 	padding: 0px 0px 14px 10px;
-	/**margin: 0px;
-	border-bottom:1px solid #ccd2d2;*/
 }
 
 .pageName h2{
@@ -182,12 +178,10 @@ body{
 	position: absolute;
 	padding: 10px 10px 10px 10px;
 	float: left;
-	top: 0px;
+	/*top: 0px;*/
+	top: 50px;
 	right: 0px;
 }
-
-
-
 
 /************** siteInfo styles ****************/
 
@@ -198,7 +192,6 @@ body{
 	font-size: small;
 	color: #cccccc;
 	padding: 10px 10px 10px 10px;
-/**	margin-top: 0px;*/
 }
 
 .siteInfo img{
@@ -249,15 +242,6 @@ h5{
 
 
 /********* form and related tag styles *********/
-
-/*to be deleted now that I have bootstrap text box*/
-input{
-	font-family:  Calibri, Arial,sans-serif;
-	font-size: 120%;
-	border: 1px;
-	border-style: solid;
-	padding: 12px;
-}
 
 .important{
 	font-weight: bold;
@@ -322,15 +306,17 @@ input{
     padding: 10px 15px;
 }
 
- /*input area
+/***********************************************/
+/* Input text                                  */
+/***********************************************/
 .form-control {
     display: block;
     width: 100%;
-    height: 38px; //38px
+    height: 50px;
+		font-size: 4vh;
     padding: 6px 12px;
-		font-size: 4vh;  //font-size: 14px;
     line-height: 1.42857143;
-    color: #555;
+    color: black;
     background-color: #fff;
     background-image: none;
     border: 1px solid #ccc;
@@ -340,4 +326,4 @@ input{
     -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
     -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-}*/
+}

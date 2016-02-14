@@ -2,12 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <title>Maths is Logic</title>
-  <link rel="stylesheet" href="stylesheet.css" type="text/css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script> -->
-  <!--<script type="text/javascript" src="script.js">-->
+  <link rel="stylesheet" href="stylesheet.css" type="text/css" />
 </head>
 
 <body>
@@ -27,30 +23,24 @@
       <div class="content">
         <h3> Add </h3>
         <p id="question"></p>
-        <!-- <p>Tarry and Tivo want to buy some sweets from the shop. If Tarry buys <span id="number1" class="important"></span> sweets and Tivo buys <span id="number2" class="important"></span> sweets how many do they have?</p> -->
         <p><span id="number1_sum"></span> <span id="operator"></span> <span id="number2_sum"></span> = </p>
         <p><input type="text" id="answer" class="form-control" placeholder="Type here"></p>
       </div>
-      <div class="submit btn-group" role="group" aria-label="...">
-        <div><button type="button" class="btn btn-default" id="submitAns">Submit</button></div>
-      </div>
-      <div class="submit btn-group" role="group" aria-label="...">
-        <div><button type="button" class="btn btn-default" id="help">Help me!</button></div>
-      </div>
+        <button type="button" class="submitBtn generalBtn" id="submitAns">Submit</button>
+        <button type="button" class="helpBtn generalBtn" id="help">Help me!</button>
         <div><p id="helpImage1"></p></div>
         <div><p id="helpImage2"></p></div>
-        <!-- <div id="stars" class="starArray"></div> -->
       </div> <!--end tag for question area -->
     </div>
-    <div class="image-container"> <img src="boy.png" alt="Boy" width="200" height="auto" /></div>
+    <div class="image-container"> <img src="boy.png" alt="Boy" width="225" height="auto" /></div>
   </div>
   <div id="backgroundMsgBox">
     <div id="msgBox"></div>
     <!-- This is to close the message box-->
-    <div class="submit btn-group" role="group" aria-label="...">
-      <div><button type="button" class="btn btn-default" id="closeMsg">Okay</button></div>
-    </div>
+      <button type="button" class="closeBtn generalBtn" id="closeMsg">Okay</button>
   </div>
+
+<script src="questions.js"></script>
 <script src="calculate.js"></script>
 <script>add();</script>
 </body>
