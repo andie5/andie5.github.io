@@ -295,6 +295,7 @@ h5{
     padding-left: 0;
     margin-bottom: 11px;
     list-style: none;
+		font-size: 3vh;
 }
 
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
@@ -308,6 +309,20 @@ h5{
     position: relative;
     display: block;
     padding: 10px 15px;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+		font-size: 3vh;
+		padding: 10px;
+}
+
+.col-md-6{
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 40px;
 }
 
 /***********************************************/
