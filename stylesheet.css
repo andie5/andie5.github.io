@@ -11,10 +11,10 @@ body{
 	font-family: Calibri, Arial, sans-serif;
 	color: #333333;
 	line-height: 1.166;
-	margin: 0px;
-	padding: 0px;
+	/*margin: 0px;
+	padding: 0px;*/
 	background:  url(handprint_background2.png) fixed;
-	font-size: 20px;
+	/*font-size: 20px;*/
 
 	/*Stops backround appearing tiled*/
 	background-size: cover;
@@ -181,6 +181,10 @@ body{
 	/*top: 0px;*/
 	top: 50px;
 	right: 0px;
+}
+
+#main-image{
+	top: 0px;
 }
 
 /************** siteInfo styles ****************/
